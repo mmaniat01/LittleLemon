@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    {% load static %}
+    <img src="{% static '/restaurant/img/logo.png' %}" />
+    <h1>{{ greeting }}</h1>
+    <ul>
+      {% for item in items %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
